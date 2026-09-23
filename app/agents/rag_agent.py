@@ -77,7 +77,7 @@ class RagAgent:
         ]
         return RagResult(answer=answer_text, sources=sources)
 
-    def escalate(self, message: str, reason: str):
-        """Sends the escalation email after the user has confirmed."""
-        return self._escalation_agent.escalate(message, reason)
+    def escalate(self, message: str, reason: str, employee_id: str, employee_email: str):
+        """Sends the escalation email after the user has confirmed and provided their details."""
+        return self._escalation_agent.escalate(message, reason, employee_id, employee_email)
 
