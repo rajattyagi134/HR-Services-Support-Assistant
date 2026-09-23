@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HR Support Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🧑‍💼 HR Support Assistant</h1>
+      <p class="subtitle">RAG-powered chat over your HR policy PDFs</p>
+    </header>
+
+    <section class="ingest">
+      <label for="pdf-input">Upload HR policy PDF(s):</label>
+      <input type="file" id="pdf-input" accept="application/pdf" multiple />
+      <button id="ingest-btn">Ingest</button>
+      <span id="ingest-status"></span>
+    </section>
+
+    <section class="chat">
+      <div id="messages" class="messages"></div>
+      <form id="chat-form">
+        <input id="chat-input" type="text" placeholder="Ask about leave, payroll, benefits..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

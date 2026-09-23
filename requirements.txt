@@ -1,0 +1,33 @@
+# --- Core (unpinned to allow Python 3.13-compatible wheels) ---
+numpy>=2.1.0
+
+# --- Web / API ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# --- RAG / LLM orchestration ---
+langchain>=0.3.7
+langchain-community>=0.3.5
+langchain-openai>=0.2.6
+langchain-ollama>=0.2.0
+langchain-text-splitters>=0.3.2
+
+# --- Vector store ---
+chromadb>=0.5.20
+langchain-chroma>=0.1.4
+
+# --- PDF ingestion ---
+pypdf==5.0.1
+
+# --- Guardrails / validation helpers ---
+# (PII / prompt-injection checks are done with plain regex in app/guardrails.py
+#  to keep the dependency footprint small)
+tiktoken==0.8.0
+
+# --- Testing ---
+pytest==8.3.3
+httpx==0.27.2
