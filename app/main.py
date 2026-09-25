@@ -111,7 +111,7 @@ def chat(request: ChatRequest):
     if route.intent == "GREETING":
         return ChatResponse(
             answer=(
-                "👋 Hey there! I'm your HR support assistant — happy to help with leave, "
+                "Hey there! I'm your HR support assistant — happy to help you with topics like leave, "
                 "payroll, benefits, onboarding, or any company policy questions."
             ),
             intent=route.intent,

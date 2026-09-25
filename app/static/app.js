@@ -20,7 +20,7 @@ function appendMessage(text, cssClass, meta) {
 }
 
 appendMessage(
-  "👋 Hi, I'm your HR support assistant! Ask me anything about leave, payroll, benefits, " +
+  "Hi, I'm your HR support assistant! Ask me anything about leave, payroll, benefits, " +
     "onboarding, or company policies — I'll dig through the HR docs and get you an answer.",
   "bot"
 );
